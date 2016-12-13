@@ -27,15 +27,15 @@ area = w * h  # 900
 single_qoutes = 'let\'s go "hiking"\n'
 double_qoutes = "let's go 'hiking'\n"
 single_or_double_qoutes_multi_line = """\
-  Usage: ps [OPTIONS]
-    -e
-    -f\
+    Usage: ps [OPTIONS]
+        -e
+        -f\
 """
 repeated_string = 3 * 'foo'  # foofoofoo
 concated_string = 'hello,' + ' world'
 multi_line_text = (
-  'Put several strings within parentheses '
-  'to have them joined together.'
+    'Put several strings within parentheses '
+    'to have them joined together.'
 )
 get_char_by_index = 'hello'[0]  # h
 out_of_range = 'hello'[99]      # raise exception
