@@ -6,7 +6,7 @@ import time
 
 def main():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(('', 8888))
+    s.bind(('', 8889))
     s.listen(5)
 
     while True:
@@ -18,5 +18,6 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except:
+    except Exception as e:
+        raise e
         sys.exit(0)
